@@ -26,10 +26,10 @@ except ValueError:
 
 
 # 2. Write a program that takes number of rows ‘n’ as input and prints the following pattern. For n=4, it is,
-# 1
-# 121
-# 12321
-# 1234321
+### 1
+### 121
+### 12321
+### 1234321
 
 
 
