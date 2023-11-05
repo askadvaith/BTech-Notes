@@ -297,18 +297,22 @@ while True:
         print("Invalid data type. Please enter 'string', 'integer', or 'float'.")
         continue
 
-    value = input(f"Enter the value for '{key}': ")
-
     if data_type == "integer":
-        data_dict[key] = int(value)
+        value = int(input(f"Enter the value for '{key}': "))
     elif data_type == "float":
-        data_dict[key] = float(value)
+        value = float(input(f"Enter the value for '{key}': "))
     else:
-        data_dict[key] = value
+        value = input(f"Enter the value for '{key}': ")
 
-sentence = " ".join([str(value) for key, value in data_dict.items() if isinstance(value, str)])
+    data_dict[key] = (value, data_type)
 
-print("Sentence with string values:", sentence)
+sentence = ""
+for key in data_dict:
+    value, data_type = data_dict[key]
+    if data_type == "string":
+        sentence += str(value) + " "
+
+print("Sentence with string values:", sentence.strip())
 ```
 
 
