@@ -259,23 +259,26 @@ Eg: inp_str=”Welcome to python” output=”Xfmdpnf up qzuipm”
 
 
 ```py
-def shift_letter(letter):
-    if 'a' <= letter <= 'z':
-        # Shift lowercase letter
-        return chr(((ord(letter) - ord('a') + 1) % 26) + ord('a'))
-    elif 'A' <= letter <= 'Z':
-        # Shift uppercase letter
-        return chr(((ord(letter) - ord('A') + 1) % 26) + ord('A'))
+s=input("Enter a sentence: ")
+ns=""
+for i in s:
+    if i in lower:
+        for d in range(len(lower)):
+            if lower[d]==i:
+                if i=="z":
+                    ns+="a"
+                else:
+                    ns+=lower[d+1]
+    elif i in upper:
+        for d1 in range(len(upper)):
+            if upper[d1]==i:
+                if i=="Z":
+                    ns+="A"
+                else:
+                    ns+=upper[d1+1]
     else:
-        # Return non-alphabet characters as-is
-        return letter
-
-inp_str = input("Enter a sentence: ")
-
-# Apply the shift_letter function to each character in the input string
-output_str = ''.join([shift_letter(char) for char in inp_str])
-
-print("Output:", output_str)
+        ns+=i
+print(ns)
 ```
 
 
