@@ -362,25 +362,15 @@ Eg1: inp_str=”Hello world” , shift_value=3, Output= Khoor zruog
 Eg2: inp_str=” Zero to hero!” , shift_value=1, Output= Afsp up ifsp!
 
 ```py
-def caesar_cipher_encrypt(message, shift):
-    encrypted_message = ""
-    
-    for char in message:
-        if char.isalpha():
-            if char.islower():
-                shifted_char = chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))
-            else:
-                shifted_char = chr(((ord(char) - ord('A') + shift) % 26) + ord('A'))
-            encrypted_message += shifted_char
-        else:
-            encrypted_message += char
-    
-    return encrypted_message
-
 inp_str = input("Enter a message: ")
-shift_value = int(input("Enter the shift value: "))
+shift_value = 2
 
-encrypted_message = caesar_cipher_encrypt(inp_str, shift_value)
+letters = list("abcdefghijklmnopqrstuvwxyz")*2
+
+encrypted_message=""
+
+for i in inp_str:
+    encrypted_message=encrypted_message+letters[letters.index(i)+shift_value]
 
 print("Encrypted Message:", encrypted_message)
 ```
