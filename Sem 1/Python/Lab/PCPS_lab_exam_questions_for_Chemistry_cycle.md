@@ -255,7 +255,7 @@ for row in transpose_lst:
 ```
 
 # 10) Write a program that takes a sentence as input and converts each alphabet in a given sentence to the next letter in the alphabet, while preserving the case of the letters. For example, a is converted to b, b to c, so on and z to a. (ignore punctuations in the input sentence) 
-Eg: inp_str=”Welcome to python” output=”Xfmdpnf up qzuipm”
+Eg: inp_str=”Welcome to python” output=”Xfmdpnf up qzuipo”
 
 
 ```py
