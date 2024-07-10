@@ -1,6 +1,6 @@
 # BTech Notes
 
-Hiya! I'm Advaith, a first year BTech student at PES University, and these are my class notes! 
+Hiya! I'm Advaith, a second year BTech student at PES University, and these are my class notes! 
 You'll find all the notes organised by semester and subject, and then further divided topic wise. I've tried my best to keep the notes informative and easy to read; hopefully you find them helpful :D
 
 ### A few things about this repository:
