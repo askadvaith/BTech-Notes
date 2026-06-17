@@ -14,13 +14,3 @@ You'll find all the notes organised by semester and subject, and then further di
 **Email:** advaithsanilkumar@gmail.com
 
 **LinkedIn:** https://www.linkedin.com/in/advaithsanil
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=askadvaith%2Fbtech-notes&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=askadvaith/btech-notes&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=askadvaith/btech-notes&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=askadvaith/btech-notes&type=date&legend=top-left" />
- </picture>
-</a>
